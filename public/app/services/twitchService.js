@@ -7,7 +7,10 @@ angular.module('twitchService', [])
 
   // get a single twitch
   twitchFactory.get = function(url) {
-    return $http.get(url);
+    console.log(url, 'yooooo')
+    return $http.get(url, {
+      headers: {'Client-ID': 'huyy6nqq0rrp9jvgbplfw1rrgsosjxd'}
+    });
   };
 
   // return our entire twitchFactory object
