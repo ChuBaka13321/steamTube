@@ -25,7 +25,6 @@ angular.module('gameCtrl', ['gameService', 'youtube-embed', 'twitchService', 'st
       var responseString = JSON.stringify(response, '', 2);
       $scope.video1 = JSON.parse(responseString).items[0].id.videoId || JSON.parse(responseString).items[1].id.videoId;
       $scope.$apply()
-      
   }
 
   // Called automatically when JavaScript client library is loaded.
