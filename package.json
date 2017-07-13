@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/ChuBaka13321/steamTube.git"
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "scripts": {
     "start": "node server.js"
   },
